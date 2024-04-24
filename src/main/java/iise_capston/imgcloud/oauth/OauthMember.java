@@ -25,15 +25,9 @@ public class OauthMember {
     private OauthId oauthId;
     private String nickname;
     private String picture;
-
-    @Column
-    private String user_key;
     @Column
     private String email;
-    @Column
-    private List<String> upload_video_list;
-    @Column
-    private List<String> upload_image_list;
+
     public Long user_id(){
         return user_id;
     }
@@ -49,11 +43,6 @@ public class OauthMember {
     public String email(){
         return email;
     }
-    public List<String> upload_video_list(){
-        return upload_video_list;
-    }
-    public List<String> upload_image_list(){
-        return upload_image_list;
-    }
+
 
 }
